@@ -6,7 +6,7 @@ Nasledujúce inštrukcie vám ukážu, ako nainštalovať a spustiť aplikáciu 
 
 Najprv si nainštalujte Docker z oficiálnych webových stránok: Docker Install .
 
-Stiahnite si Docker obraz aplikácie v súbore testzadanie.tar
+Stiahnite si Docker obraz aplikácie [v súbore testzadanie.tar](https://ulozto.sk/tam/e12a2bbd-6d83-4090-b545-01c8b2777d46)
 
 Po úspešnom stiahnutí prejdite v termináli do priečinku kde je obraz uložený a sputite príkaz:
 'docker load -i testzadanie.tar'
