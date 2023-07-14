@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+</head>
+<body>
+    <h2>Vítejte na domovské stránce</h2>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+        <li class="{{ message[1] }}">{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    <div>
+        <button onclick="window.location.href='/page1'">Pridaj prispevok</button>
+        <button onclick="window.location.href='/page2'">Stránka 2</button>
+        <button onclick="window.location.href='/page3'">Stránka 3</button>
+        <button onclick="window.location.href='/page4'">Stránka 4</button>
+    </div>
+</body>
+</html>

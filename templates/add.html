@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Post</title>
+</head>
+<body>
+    <h2>Add Post</h2>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul>
+        {% for message in messages %}
+        <li class="{{ message[1] }}">{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    <form action="/add-post" method="post">
+        <div>
+            <label>User ID:</label>
+            <input type="number" name="userId" required>
+        </div>
+        <div>
+            <label>Title:</label>
+            <input type="text" name="title" required>
+        </div>
+        <div>
+            <label>Body:</label>
+            <textarea name="body" required></textarea>
+        </div>
+        <button type="submit">Add Post</button>
+    </form>
+</body>
+</html>

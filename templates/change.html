@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upravení příspěvku</title>
+</head>
+<body>
+    <h2>Upravení příspěvku</h2>
+    <form action="/update_page/{{ post_id }}" method="post">
+        <input type="hidden" name="_method" value="PUT">
+        <label for="title_input">Titulek:</label>
+        <input type="text" id="title_input" name="title" required><br>
+        <label for="body_input">Obsah:</label>
+        <textarea id="body_input" name="body" rows="5" required></textarea><br>
+        <button type="submit">Uložit změny</button>
+    </form>
+
+    {% if error %}
+    <p class="error">{{ error }}</p>
+    {% endif %}
+</body>
+</html>

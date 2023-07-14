@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Posts</title>
+</head>
+<body>
+    <h2>Posts</h2>
+    <ul>
+        <li>
+            <h3>{{ posts.title }}</h3>
+            <p>{{ posts.body }}</p>
+            <button onclick="window.location.href='/delete-post/{{posts.id}}'">Vymaz</button>
+            <button onclick="window.location.href='/updatepost/{{posts.id}}'">uprav</button>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Posts</title>
+</head>
+<body>
+    <h2>Posts</h2>
+    <ul>
+        {% for post in posts %}
+        <li>
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.body }}</p>
+            <button onclick="window.location.href='/delete-post/{{post.id}}'">Vymaz</button>
+            <button onclick="window.location.href='/updatepost/{{post.id}}'">uprav</button>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

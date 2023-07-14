@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Získání příspěvku</title>
+</head>
+<body>
+    <h2>Získání příspěvku</h2>
+    <form action="/numberpost" method="post">
+        <label for="id_input">Zadejte ID příspěvku nebo ID uživatele:</label>
+        <input type="number" id="id_input" name="id" min="1" required>
+        <select name="search_type" id="search_type" required>
+            <option value="id">ID příspěvku</option>
+            <option value="user_id">ID uživatele</option>
+        </select>
+        <button type="submit">Zobrazit příspěvek</button>
+    </form>
+
+    {% if error %}
+    <p class="error">{{ error }}</p>
+    {% endif %}
+
+    {% if post %}
+    <h3>Příspěvek s ID {{ post.id }}</h3>
+    <p>Titulek: {{ post.title }}</p>
+    <p>Obsah: {{ post.body }}</p>
+    {% endif %}
+</body>
+</html>
