@@ -9,10 +9,10 @@ Najprv si nainštalujte Docker z oficiálnych webových stránok: Docker Install
 Stiahnite si Docker obraz aplikácie v súbore testzadanie.tar
 
 Po úspešnom stiahnutí prejdite v termináli do priečinku kde je obraz uložený a sputite príkaz:
-docker load -i testzadanie.tar
+'docker load -i testzadanie.tar'
 
 Po úspešnom natiahnutí obrazu spustite kontajner pomocou nasledujúceho príkazu:
-docker run -p 5000:5000 testzadanie
+'docker run -p 5000:5000 testzadanie' 
 Týmto príkazom spustíte kontajner a prepojíte port 5000 uvnitř kontajneru s portom 5000 na vašom hostiteľskom stroji.
 
 Otvorte webový prehliadač a prejdite na http://localhost:5000, aby ste videli domovskú stránku aplikácie.
