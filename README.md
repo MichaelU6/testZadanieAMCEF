@@ -1,7 +1,7 @@
-#Názov aplikácie
+Názov aplikácie
 Microservice v Pythone, ktorý sprostredkováva RESTful API na manažovanie príspevkov používateľov. 
 
-##Inštalácia
+Inštalácia
 Nasledujúce inštrukcie vám ukážu, ako nainštalovať a spustiť aplikáciu v kontajneri pomocou Dockeru.
 
 Najprv si nainštalujte Docker z oficiálnych webových stránok: Docker Install .
@@ -17,11 +17,10 @@ Týmto príkazom spustíte kontajner a prepojíte port 5000 uvnitř kontajneru s
 
 Otvorte webový prehliadač a prejdite na http://localhost:5000, aby ste videli domovskú stránku aplikácie.
 
-##Použitie
+Použitie
 Aplikácia najprv otovrí domovskú stránku. Pre pridanie príspevku sa použíej talčidlo pridať príspevok. Je potrebné zadať všetky údaje o príspevku a odoslať príspevok.
 Pre prezeranie príspevku použíjete tlačidlo príspevky. Následne treba vybrať id príspevku alebo id užívateľa a vyhľadať prísevky. Po vyhľadaní môžeme každý príspevok
 vymazať alebo upraviť.
 
-##Příspěvky a Přispěvatelé
-Autorka: Vaše meno
-Email: vaš e@email.com
+
+Autor: Michal Uhrin
